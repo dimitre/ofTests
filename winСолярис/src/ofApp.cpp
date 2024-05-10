@@ -4,7 +4,7 @@ void ofApp::setup(){
 	auto exe = ofFilePath::getCurrentExePathFS();
 	cout << exe << endl;
 	ofSystemAlertDialog ( ofPathToString(exe) );
-	auto answer = ofSystemTextBoxDialog(exe, exe);
+	auto answer = ofSystemTextBoxDialog( ofPathToString(exe) , ofPathToString(exe) );
 }
 
 void ofApp::update(){
