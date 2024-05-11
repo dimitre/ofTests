@@ -25,7 +25,7 @@ public:
 	
 	void waitNext() {
 		// Lazy wakeup
-		std::this_thread::sleep_until(wakeTime - 4ms);
+		std::this_thread::sleep_until(wakeTime - 34ms);
 		
 		// Processor Coffee
 		while(steady_clock::now() < (wakeTime)) { // 0.05ms 0.5us // - 0.5us  - 1ns
