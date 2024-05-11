@@ -40,8 +40,6 @@ public:
 
 
 
-
-
 struct grapher {
 	string name {""};
 	ofColor color = ofColor(255, 0, 0);
@@ -205,12 +203,12 @@ public:
 	
 	void updateFps() {
 		if (isNew) {
-			ofSetVerticalSync(0);
+			ofSetVerticalSync(false);
 			ofSetFrameRate(0);
 			t.setFps(fps);
 			t.reset();
 		} else {
-			ofSetVerticalSync(0);
+			ofSetVerticalSync(true);
 			ofSetFrameRate(fps);
 		}
 	}
