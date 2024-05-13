@@ -26,7 +26,7 @@ void ofApp::keyPressed(int key){
 	if (key == 'a') {
 		auto s = ofSystemTextBoxDialog("Anunciação what is your favorite color?" , "Anunciação blue");
 	}
-	else if (key == 's') {
+	else if (key == 'l') {
 		ofFileDialogResult result = ofSystemLoadDialog("Anunciação Load file");
 		if(result.bSuccess) {
 			image.load(result.getPath());
