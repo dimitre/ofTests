@@ -25,8 +25,8 @@ public:
 	
 	void waitNext() {
 		// Lazy wakeup
-		std::this_thread::sleep_until(wakeTime - 34ms);
-		
+		std::this_thread::sleep_until(wakeTime - 36ms); //4ms
+
 		// Processor Coffee
 		while(steady_clock::now() < (wakeTime)) { // 0.05ms 0.5us // - 0.5us  - 1ns
 			std::this_thread::yield();
@@ -197,8 +197,9 @@ using std::endl;
 
 struct fpsToggler {
 public:
-	bool isNew = true;
-	ofTimerFpsX t;
+//	bool isNew = true;
+	bool isNew = false;
+	ofTimerFps t;
 	int fps = 30;
 	
 	void updateFps() {
@@ -232,9 +233,4 @@ public:
 		}
 	}
 } ;
-
-
-
-
-
 
