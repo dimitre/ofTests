@@ -6,6 +6,9 @@ ofImage image;
 void ofApp::setup(){
 	cout << "testing exe branch" << endl;
 	cout << ofFilePath::getCurrentExePathFS() << endl;
+	cout << "will test loading file now" << endl;
+	image.load("consolação.jpg");
+	cout << "file loaded" << endl;
 }
 
 void ofApp::update(){

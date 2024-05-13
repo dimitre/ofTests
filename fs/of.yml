@@ -1,0 +1,12 @@
+# name: Coca2023
+
+ofpath: ../../..
+# ofpath: /Volumes/tool/ofw
+
+addons:
+- ofxUnitTests
+# - ofxTools
+# - ofxScenes
+#- ofxSvg
+
+platforms: ["vscode", "osx"]
