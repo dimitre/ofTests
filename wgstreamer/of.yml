@@ -1,0 +1,6 @@
+ofpath: ../../..
+
+addons:
+# - ofxKinectForWindows2
+
+platforms: ["vs", "osx", "vscode"]

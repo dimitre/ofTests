@@ -30,7 +30,7 @@ obj/osx/Release/src/ofApp.o: src/ofApp.cpp src/ofApp.h \
   ../../../libs/glm/include/glm/ext/../detail/setup.hpp \
   ../../../libs/glm/include/glm/ext/scalar_constants.inl \
   ../../../libs/glm/include/glm/gtc/constants.inl \
-  ../../../libs/openFrameworks/utils/ofTimer.h \
+  ../../../libs/openFrameworks/utils/ofTimerFps.h \
   ../../../libs/glm/include/glm/vec2.hpp \
   ../../../libs/glm/include/glm/./ext/vector_bool2.hpp \
   ../../../libs/glm/include/glm/ext/../detail/type_vec2.hpp \
@@ -464,7 +464,7 @@ src/ofApp.h:
 
 ../../../libs/glm/include/glm/gtc/constants.inl:
 
-../../../libs/openFrameworks/utils/ofTimer.h:
+../../../libs/openFrameworks/utils/ofTimerFps.h:
 
 ../../../libs/glm/include/glm/vec2.hpp:
 
