@@ -3,4 +3,4 @@ ofpath: ../../..
 addons:
 # - ofxKinectForWindows2
 
-platforms: ["vs", "osx", "vscode"]
+platforms: ["vs"]
