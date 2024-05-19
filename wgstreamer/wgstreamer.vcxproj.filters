@@ -11,13 +11,13 @@
 			<Filter>addons\ofxGStreamer\src</Filter>
 		</ClCompile>
 		<ClCompile Include="..\..\..\libs\openFrameworks\video\ofGstUtils.cpp">
-			<Filter></Filter>
+			<Filter>other</Filter>
 		</ClCompile>
 		<ClCompile Include="..\..\..\libs\openFrameworks\video\ofGstVideoPlayer.cpp">
-			<Filter></Filter>
+			<Filter>other</Filter>
 		</ClCompile>
 		<ClCompile Include="..\..\..\libs\openFrameworks\video\ofGstVideoGrabber.cpp">
-			<Filter></Filter>
+			<Filter>other</Filter>
 		</ClCompile>
 	</ItemGroup>
 	<ItemGroup>
@@ -25,16 +25,16 @@
 			<UniqueIdentifier>{d8376475-7454-4a24-b08a-aac121d3ad6f}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons">
-			<UniqueIdentifier>{B739597F--F78-6-40-0A-9-687-F3DCE85AEDFE}</UniqueIdentifier>
+			<UniqueIdentifier>{503A3E64--E53-B-4A-7B-9-81B-880BD2603D13}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxGStreamer">
-			<UniqueIdentifier>{AF452221--4E3-C-4D-20-9-C06-201F0D580544}</UniqueIdentifier>
+			<UniqueIdentifier>{CFB99D3D--9AE-2-42-1D-9-5E5-4AAF1C4338FB}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxGStreamer\src">
-			<UniqueIdentifier>{0801CB50--383-9-47-60-8-C65-7AD1F785B15C}</UniqueIdentifier>
+			<UniqueIdentifier>{65F85404--A09-4-46-87-B-5B5-F14244238965}</UniqueIdentifier>
 		</Filter>
-		<Filter Include="">
-			<UniqueIdentifier>{A569B803--142-4-4F-6E-A-CE3-FBF1E6D9BC08}</UniqueIdentifier>
+		<Filter Include="other">
+			<UniqueIdentifier>{7E1C7C1E--3FE-4-48-D0-B-E1D-C0FE73AB146A}</UniqueIdentifier>
 		</Filter>
 	</ItemGroup>
 	<ItemGroup>
@@ -45,13 +45,13 @@
 			<Filter>addons\ofxGStreamer\src</Filter>
 		</ClInclude>
 		<ClInclude Include="..\..\..\libs\openFrameworks\video\ofGstUtils.h">
-			<Filter></Filter>
+			<Filter>other</Filter>
 		</ClInclude>
 		<ClInclude Include="..\..\..\libs\openFrameworks\video\ofGstVideoPlayer.h">
-			<Filter></Filter>
+			<Filter>other</Filter>
 		</ClInclude>
 		<ClInclude Include="..\..\..\libs\openFrameworks\video\ofGstVideoGrabber.h">
-			<Filter></Filter>
+			<Filter>other</Filter>
 		</ClInclude>
 	</ItemGroup>
 	<ItemGroup>
