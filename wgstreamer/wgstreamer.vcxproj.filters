@@ -7,15 +7,51 @@
 		<ClCompile Include="src\main.cpp">
 			<Filter>src</Filter>
 		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxGStreamer\src\ofxGStreamer.cpp">
+			<Filter>addons\ofxGStreamer\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\libs\openFrameworks\video\ofGstUtils.cpp">
+			<Filter></Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\libs\openFrameworks\video\ofGstVideoPlayer.cpp">
+			<Filter></Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\libs\openFrameworks\video\ofGstVideoGrabber.cpp">
+			<Filter></Filter>
+		</ClCompile>
 	</ItemGroup>
 	<ItemGroup>
 		<Filter Include="src">
 			<UniqueIdentifier>{d8376475-7454-4a24-b08a-aac121d3ad6f}</UniqueIdentifier>
 		</Filter>
+		<Filter Include="addons">
+			<UniqueIdentifier>{B739597F--F78-6-40-0A-9-687-F3DCE85AEDFE}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxGStreamer">
+			<UniqueIdentifier>{AF452221--4E3-C-4D-20-9-C06-201F0D580544}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxGStreamer\src">
+			<UniqueIdentifier>{0801CB50--383-9-47-60-8-C65-7AD1F785B15C}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="">
+			<UniqueIdentifier>{A569B803--142-4-4F-6E-A-CE3-FBF1E6D9BC08}</UniqueIdentifier>
+		</Filter>
 	</ItemGroup>
 	<ItemGroup>
 		<ClInclude Include="src\ofApp.h">
 			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxGStreamer\src\ofxGStreamer.h">
+			<Filter>addons\ofxGStreamer\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\libs\openFrameworks\video\ofGstUtils.h">
+			<Filter></Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\libs\openFrameworks\video\ofGstVideoPlayer.h">
+			<Filter></Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\libs\openFrameworks\video\ofGstVideoGrabber.h">
+			<Filter></Filter>
 		</ClInclude>
 	</ItemGroup>
 	<ItemGroup>
