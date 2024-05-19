@@ -82,7 +82,7 @@
 			<PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
 			<RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
 			<WarningLevel>Level3</WarningLevel>
-			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;..\..\..\addons\ofxGStreamer\src;..\..\..\addons\ofxGStreamer\include;..\..\..\addons\ofxGStreamer\include\gstreamer-1.0;..\..\..\addons\ofxGStreamer\include\glib-2.0;..\..\..\addons\ofxGStreamer\lib\glib-2.0\include;..\..\..\addons\ofxGStreamer\lib\gstreamer-1.0\include</AdditionalIncludeDirectories>
+			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;..\..\..\addons\ofxGui\src;..\..\..\addons\ofxGStreamer\src;..\..\..\addons\ofxGStreamer\include;..\..\..\addons\ofxGStreamer\include\gstreamer-1.0;..\..\..\addons\ofxGStreamer\include\glib-2.0;..\..\..\addons\ofxGStreamer\lib\glib-2.0\include;..\..\..\addons\ofxGStreamer\lib\gstreamer-1.0\include</AdditionalIncludeDirectories>
 			<CompileAs>CompileAsCpp</CompileAs>
 			<MultiProcessorCompilation>true</MultiProcessorCompilation>
 			<ObjectFileName>$(IntDir)\Build\%(RelativeDir)\$(Configuration)\</ObjectFileName>
@@ -127,7 +127,7 @@
 			<PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
 			<RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
 			<WarningLevel>Level3</WarningLevel>
-			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;..\..\..\addons\ofxGStreamer\src;..\..\..\addons\ofxGStreamer\include;..\..\..\addons\ofxGStreamer\include\gstreamer-1.0;..\..\..\addons\ofxGStreamer\include\glib-2.0;..\..\..\addons\ofxGStreamer\lib\glib-2.0\include;..\..\..\addons\ofxGStreamer\lib\gstreamer-1.0\include</AdditionalIncludeDirectories>
+			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;..\..\..\addons\ofxGui\src;..\..\..\addons\ofxGStreamer\src;..\..\..\addons\ofxGStreamer\include;..\..\..\addons\ofxGStreamer\include\gstreamer-1.0;..\..\..\addons\ofxGStreamer\include\glib-2.0;..\..\..\addons\ofxGStreamer\lib\glib-2.0\include;..\..\..\addons\ofxGStreamer\lib\gstreamer-1.0\include</AdditionalIncludeDirectories>
 			<CompileAs>CompileAsCpp</CompileAs>
 			<ObjectFileName>$(IntDir)\Build\%(RelativeDir)\$(Configuration)\</ObjectFileName>
 			<LanguageStandard>stdcpp17</LanguageStandard>
@@ -198,6 +198,16 @@
 	<ItemGroup>
 		<ClCompile Include="src\main.cpp" />
 		<ClCompile Include="src\ofApp.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxGui\src\ofxBaseGui.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxGui\src\ofxColorPicker.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxGui\src\ofxSliderGroup.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxGui\src\ofxToggle.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxGui\src\ofxButton.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxGui\src\ofxGuiGroup.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxGui\src\ofxInputField.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxGui\src\ofxLabel.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxGui\src\ofxPanel.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxGui\src\ofxSlider.cpp" />
 		<ClCompile Include="..\..\..\addons\ofxGStreamer\src\ofxGStreamer.cpp" />
 		<ClCompile Include="..\..\..\libs\openFrameworks\video\ofGstUtils.cpp" />
 		<ClCompile Include="..\..\..\libs\openFrameworks\video\ofGstVideoPlayer.cpp" />
@@ -205,6 +215,18 @@
 	</ItemGroup>
 	<ItemGroup>
 		<ClInclude Include="src\ofApp.h" />
+		<ClInclude Include="..\..\..\addons\ofxGui\src\ofxGuiGroup.h" />
+		<ClInclude Include="..\..\..\addons\ofxGui\src\ofxToggle.h" />
+		<ClInclude Include="..\..\..\addons\ofxGui\src\ofxSlider.h" />
+		<ClInclude Include="..\..\..\addons\ofxGui\src\ofxGui.h" />
+		<ClInclude Include="..\..\..\addons\ofxGui\src\ofxBaseGui.h" />
+		<ClInclude Include="..\..\..\addons\ofxGui\src\ofxButton.h" />
+		<ClInclude Include="..\..\..\addons\ofxGui\src\ofxLabel.h" />
+		<ClInclude Include="..\..\..\addons\ofxGui\src\ofxInputField.h" />
+		<ClInclude Include="..\..\..\addons\ofxGui\src\ofxGuiUtils.h" />
+		<ClInclude Include="..\..\..\addons\ofxGui\src\ofxSliderGroup.h" />
+		<ClInclude Include="..\..\..\addons\ofxGui\src\ofxColorPicker.h" />
+		<ClInclude Include="..\..\..\addons\ofxGui\src\ofxPanel.h" />
 		<ClInclude Include="..\..\..\addons\ofxGStreamer\src\ofxGStreamer.h" />
 		<ClInclude Include="..\..\..\libs\openFrameworks\video\ofGstUtils.h" />
 		<ClInclude Include="..\..\..\libs\openFrameworks\video\ofGstVideoPlayer.h" />

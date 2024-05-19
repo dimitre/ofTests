@@ -1,6 +1,8 @@
 ofpath: ../../..
 
 addons:
+- ofxGui
+- ofxGStreamer
 # - ofxKinectForWindows2
 
 platforms: ["vs", "vscode"]
