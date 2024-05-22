@@ -1,0 +1,5 @@
+.cquery_cache/
+obj
+.DS_Store
+*.app
+*.app/*
