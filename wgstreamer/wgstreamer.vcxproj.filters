@@ -55,22 +55,22 @@
 			<UniqueIdentifier>{d8376475-7454-4a24-b08a-aac121d3ad6f}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons">
-			<UniqueIdentifier>{E5CD2297--F43-9-4E-52-A-292-A9CFA68D87C8}</UniqueIdentifier>
+			<UniqueIdentifier>{D8569FB1--E61-F-4A-EA-9-38C-8866EF6F38D8}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxGui">
-			<UniqueIdentifier>{A79E3578--E32-7-4D-97-A-5A6-0298F6B5B156}</UniqueIdentifier>
+			<UniqueIdentifier>{32FEAEA2--5A4-1-40-F6-A-8D5-4E055B905A45}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxGui\src">
-			<UniqueIdentifier>{C224700D--EA8-F-47-10-8-8E7-F4981796AA7E}</UniqueIdentifier>
+			<UniqueIdentifier>{AB95CEFB--172-A-43-06-9-232-A6FA9C32EE16}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxGStreamer">
-			<UniqueIdentifier>{C701AE92--928-F-43-9D-B-5B7-E4832FF5B1D8}</UniqueIdentifier>
+			<UniqueIdentifier>{8F49DF34--C5D-5-4B-39-9-A64-28568E7979F1}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxGStreamer\src">
-			<UniqueIdentifier>{B5CD33FC--978-D-47-C5-9-837-D62CE20C64BA}</UniqueIdentifier>
+			<UniqueIdentifier>{26438D96--2EF-B-4F-8E-8-F68-B9C0D3CD6554}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="other">
-			<UniqueIdentifier>{FCF41230--30F-0-43-C1-8-6C5-7116B6205A48}</UniqueIdentifier>
+			<UniqueIdentifier>{436938FC--43E-3-46-F4-A-D5E-24C315EC8F52}</UniqueIdentifier>
 		</Filter>
 	</ItemGroup>
 	<ItemGroup>
