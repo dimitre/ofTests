@@ -394,7 +394,7 @@ namespace ImageIO {
             return loadImageSTB(filepath, width, height, channels);
         }
         else {
-            std::cerr << "unsupported format: " << filepath;
+			std::cerr << "unsupported format: " << filepath << std::endl;
             return nullptr;
         }
         return nullptr;
