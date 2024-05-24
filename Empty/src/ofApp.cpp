@@ -10,7 +10,7 @@ void ofApp::update(){
 }
 
 void ofApp::draw(){	
-	img.draw();
+	img.draw(0, 0);
 	testDraw();
 }
 
