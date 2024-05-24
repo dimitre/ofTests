@@ -1,12 +1,6 @@
-# name: Coca2023
-
 ofpath: ../../..
-# ofpath: /Volumes/tool/ofw
 
 addons:
-- ofxMicroUI
-# - ofxTools
-# - ofxScenes
-#- ofxSvg
+# - ofxKinectForWindows2
 
-platforms: ["vscode", "osx"]
+platforms: ["vs"] 

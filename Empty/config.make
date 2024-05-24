@@ -140,13 +140,3 @@ OF_ROOT = ../../..
 ################################################################################
 # PROJECT_CXX = 
 # PROJECT_CC = 
-
-# Uncomment/comment below to switch between C++11 and C++17 ( or newer ). On macOS C++17 needs 10.15 or above.
-export MAC_OS_MIN_VERSION = 10.15
-export MAC_OS_CPP_VER = -std=c++17
-
-CFLAGS += -Wjump-misses-init -Wlogical-op -Wshadow -std=c1x -fms-extensions -Wall -Wextra -Wpedantic \
-          -Wformat=2 -Wno-unused-parameter \
-          -Wwrite-strings -Wstrict-prototypes -Wold-style-definition \
-          -Wredundant-decls -Wnested-externs -Wmissing-include-dirs
-# 
