@@ -24,6 +24,9 @@ void ofApp::draw(){
 
 void ofApp::keyPressed(int key){
 	if (key == 'a') {
+		ofSystemAlertDialog("Translação, rotação");
+	}
+	else if (key == 'd') {
 		auto s = ofSystemTextBoxDialog("Anunciação what is your favorite color?" , "Anunciação blue");
 	}
 	else if (key == 'l') {

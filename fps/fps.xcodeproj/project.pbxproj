@@ -18,6 +18,7 @@
 			"sourceTree": "SOURCE_ROOT"
 		},
 		"19B789C429E5AB4A0082E9B8": {
+			"alwaysOutOfDate": "1",
 			"buildActionMask": "2147483647",
 			"files": [],
 			"inputFileListPaths": [],
@@ -30,19 +31,12 @@
 			"shellScript": "\"$OF_PATH/scripts/osx/xcode_project.sh\"\n",
 			"showEnvVarsInLog": "0"
 		},
-		"2B8C770B-F6DD-4AE7-89B5-22FAC19F3221": {
-			"fileEncoding": "4",
-			"isa": "PBXFileReference",
-			"lastKnownFileType": "folder",
-			"path": "bin/data",
-			"sourceTree": "SOURCE_ROOT"
-		},
-		"B51D2B5F-03EA-491B-89F8-9A6C266EB400": {
+		"99A9E47E-8FD0-4DD0-AD40-30CD69AAF419": {
 			"fileEncoding": "4",
 			"isa": "PBXFileReference",
 			"lastKnownFileType": "text.xcconfig",
-			"path": "App.xcconfig",
-			"sourceTree": "SOURCE_ROOT"
+			"name": "App.xcconfig",
+			"sourceTree": "<group>"
 		},
 		"BB4B014C10F69532006C3DED": {
 			"children": [],
@@ -51,12 +45,20 @@
 			"path": "../../../addons",
 			"sourceTree": "<group>"
 		},
-		"C74DFC30-BA7D-4EC6-A1A8-5B33F20FC75B": {
+		"BE307AC6-2802-4A66-9403-6CE193226CA2": {
 			"fileEncoding": "4",
 			"isa": "PBXFileReference",
-			"lastKnownFileType": "sourcecode.cpp.h",
-			"name": "structs.h",
-			"path": "src/structs.h",
+			"lastKnownFileType": "folder",
+			"name": "openframeworks",
+			"path": "../../../libs/openframeworks",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"C629DC72-DBC5-45A1-86BE-7B141447CD7F": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "folder",
+			"name": "data",
+			"path": "bin/data",
 			"sourceTree": "SOURCE_ROOT"
 		},
 		"E42962A92163ECCD00A6A9E2": {
@@ -89,15 +91,17 @@
 				"191EF70929D778A400F35F26",
 				"BB4B014C10F69532006C3DED",
 				"E4B69B5B0A3A1756003C02F2",
-				"B51D2B5F-03EA-491B-89F8-9A6C266EB400",
-				"2B8C770B-F6DD-4AE7-89B5-22FAC19F3221"
+				"99A9E47E-8FD0-4DD0-AD40-30CD69AAF419",
+				"BE307AC6-2802-4A66-9403-6CE193226CA2",
+				"C629DC72-DBC5-45A1-86BE-7B141447CD7F"
 			],
 			"isa": "PBXGroup",
 			"sourceTree": "<group>"
 		},
 		"E4B69B4C0A3A1720003C02F2": {
 			"attributes": {
-				"LastUpgradeCheck": "0600"
+				"BuildIndependentTargetsInParallel": "YES",
+				"LastUpgradeCheck": "1540"
 			},
 			"buildConfigurationList": "E4B69B4D0A3A1720003C02F2",
 			"compatibilityVersion": "Xcode 3.2",
@@ -256,7 +260,7 @@
 				"E4B69E1D0A3A1BDC003C02F2",
 				"E4B69E1E0A3A1BDC003C02F2",
 				"E4B69E1F0A3A1BDC003C02F2",
-				"C74DFC30-BA7D-4EC6-A1A8-5B33F20FC75B"
+				"FC0F763F-5A97-4CF0-B652-A3573D00D395"
 			],
 			"isa": "PBXGroup",
 			"path": "src",
@@ -315,8 +319,15 @@
 			"lastKnownFileType": "text.xcconfig",
 			"path": "Project.xcconfig",
 			"sourceTree": "<group>"
+		},
+		"FC0F763F-5A97-4CF0-B652-A3573D00D395": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "sourcecode.cpp.h",
+			"name": "structs.h",
+			"sourceTree": "<group>"
 		}
 	},
-	"openFrameworksProjectGeneratorVersion": "34",
+	"openFrameworksProjectGeneratorVersion": "43",
 	"rootObject": "E4B69B4C0A3A1720003C02F2"
 }
