@@ -34,7 +34,7 @@ void ofApp::keyPressed(int key){
 		if(result.bSuccess) {
 			image.load(result.getPath());
 			cout << result.getPath() << endl;
-			wcout << result.getPath() << endl;
+			std::wcout << result.getPath() << endl;
 		}
 	}
 	else if (key == 'e') {
@@ -42,7 +42,7 @@ void ofApp::keyPressed(int key){
 		if(result.bSuccess) {
 			image.load(result.getPath());
 			cout << result.getPath() << endl;
-			wcout << result.getPath() << endl;
+			std::wcout << result.getPath() << endl;
 		}
 	}
 	else if (key == 'f') {
@@ -50,7 +50,7 @@ void ofApp::keyPressed(int key){
 		if(result.bSuccess) {
 			image.load(result.getPath());
 			cout << result.getPath() << endl;
-			wcout << result.getPath() << endl;
+			std::wcout << result.getPath() << endl;
 		}
 	}
 
