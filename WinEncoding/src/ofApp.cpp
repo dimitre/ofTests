@@ -30,7 +30,7 @@ void ofApp::keyPressed(int key){
 		auto s = ofSystemTextBoxDialog("Anunciação what is your favorite color?" , "Anunciação blue");
 	}
 	else if (key == 'l') {
-		ofFileDialogResult result = ofSystemLoadDialog("Anunciação Load file");
+		ofFileDialogResult result = ofSystemLoadDialog("Anunciação Load file", true, "folderzão");
 		if(result.bSuccess) {
 			image.load(result.getPath());
 //			path = result.getPath().u8string();
