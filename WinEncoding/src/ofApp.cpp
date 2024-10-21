@@ -37,7 +37,7 @@ void ofApp::keyPressed(int key){
 			std::wcout << result.getPath() << endl;
 		}
 	}
-	else if (key == 'e') {
+	else if (key == 'f') {
 		ofFileDialogResult result = ofSystemLoadDialog("Anunciação Load file", false, "folderzão");
 		if(result.bSuccess) {
 			image.load(result.getPath());
@@ -45,7 +45,7 @@ void ofApp::keyPressed(int key){
 			std::wcout << result.getPath() << endl;
 		}
 	}
-	else if (key == 'f') {
+	else if (key == 'g') {
 		ofFileDialogResult result = ofSystemLoadDialog("Anunciação Load file");
 		if(result.bSuccess) {
 			image.load(result.getPath());
