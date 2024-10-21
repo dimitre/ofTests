@@ -32,7 +32,7 @@ void ofApp::keyPressed(int key){
 	else if (key == 'd') {
 		ofFileDialogResult result = ofSystemLoadDialog("Anunciação Load file", true, "folderzão");
 		if(result.bSuccess) {
-			image.load(result.getPath());
+//			image.load(result.getPath());
 			cout << result.getPath() << endl;
 			std::wcout << result.getPath() << endl;
 		}
