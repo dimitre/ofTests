@@ -4,6 +4,7 @@
 ofImage image;
 //--------------------------------------------------------------
 void ofApp::setup(){
+	std::setlocale(LC_ALL, "");
 	cout << ofFilePath::getCurrentExePath() << endl;
 	cout << "consolação" << endl;
 
