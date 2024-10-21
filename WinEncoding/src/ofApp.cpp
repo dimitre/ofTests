@@ -27,7 +27,8 @@ void ofApp::keyPressed(int key){
 		ofSystemAlertDialog("Translação, rotação");
 	}
 	else if (key == 's') {
-		auto s = ofSystemTextBoxDialog("Anunciação what is your favorite color?" , "Anunciação blue");
+		auto saida = ofSystemTextBoxDialog("Anunciação what is your favorite color?" , "Anunciação blue");
+		cout << saida << endl;
 	}
 	else if (key == 'd') {
 		ofFileDialogResult result = ofSystemLoadDialog("Anunciação Load file", true, "folderzão");
