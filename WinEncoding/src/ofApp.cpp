@@ -33,6 +33,13 @@ void ofApp::keyPressed(int key){
 		auto saida = ofSystemTextBoxDialog("Anunciação what is your favorite color?" , "Anunciação blue");
 		cout << saida << endl;
 	}
+	else if (key == 'e') {
+		ofFileDialogResult result = ofSystemSaveDialog("Salvação de arquivo", "o que?");
+		if(result.bSuccess) {
+			cout << result.getPath() << endl;
+			std::wcout << result.getPath() << endl;
+		}
+	}
 	else if (key == 'd') {
 		ofFileDialogResult result = ofSystemLoadDialog("Anunciação Load file", true, "folderzão");
 		if(result.bSuccess) {
