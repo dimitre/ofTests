@@ -7,6 +7,7 @@ void ofApp::setup(){
 	std::setlocale(LC_ALL, "");
 	cout << ofFilePath::getCurrentExePath() << endl;
 	cout << "consolação" << endl;
+	std::wcout << "consolação" << endl;
 
 	cout << "will test loading file now" << endl;
 	image.load("consolação.jpg");
