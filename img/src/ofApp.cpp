@@ -1,7 +1,7 @@
 #include "ofApp.h"
 
 void ofApp::setup() {
-
+	cout << std::filesystem::current_path() << endl;
 }
 
 void ofApp::update(){
