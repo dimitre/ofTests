@@ -1,0 +1,14 @@
+# name: Coca2023
+
+ofpath: ../../..
+# ofpath: /Volumes/tool/ofw
+
+addons:
+  # - ofxMicroUI
+  # - ofxTools
+  # - ofxScenes
+#- ofxSvg
+
+# templates: [macos, zed, make]
+templates: [chalet, macos, zed, make]
+# defines: [FORCE_RGFW, TARGET_RGFW_WINDOW]
