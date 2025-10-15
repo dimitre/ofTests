@@ -18,7 +18,9 @@ public:
 	void keyPressed(int key) override;
 
 	// ofImage img;
-	ofImage i { ofToDataPath("1.tif") };
-	ofImage i2 { ofToDataPath("1.png") };
+//	ofImage i { ofToDataPath("1.tif") };
+//	ofImage i2 { ofToDataPath("1.png") };
+	ofImage i { "1.tif" };
+	ofImage i2 { "1.png" };
 
 };

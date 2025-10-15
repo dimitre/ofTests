@@ -2,7 +2,12 @@
 
 void ofApp::setup() {
 
-	cout << std::filesystem::current_path() << endl;
+	cout << "CWD  " << std::filesystem::current_path() << endl;
+
+	cout << "ofToDataPath  " << ofToDataPath(".") << endl;
+
+	i.load("1.png");
+	
 	i.draw(100, 100);
 	i2.draw(300, 300);
 }
