@@ -19,5 +19,6 @@ public:
 
 	// ofImage img;
 	ofImage i { ofToDataPath("1.tif") };
+	ofImage i2 { ofToDataPath("1.png") };
 
 };
