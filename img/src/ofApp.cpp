@@ -1,15 +1,9 @@
 #include "ofApp.h"
 
 void ofApp::setup() {
-	// cout << "png_OK " << FreeImage_FIFSupportsReading (FIF_PNG) << endl;
-	// cout << "jpegOK " << FreeImage_FIFSupportsReading (FIF_JPEG) << endl;
-	// cout << "tiffOK " << FreeImage_FIFSupportsReading (FIF_TIFF) << endl;
-
-	// i.load("1.tif");
-	cout << ofToDataPath("1.jpg") << fs::exists(ofToDataPath("1.jpg")) << endl;
-	cout << ofToDataPath("1.png") << fs::exists(ofToDataPath("1.png")) << endl;
 	cout << ofToDataPath("1.tif") << fs::exists(ofToDataPath("1.tif")) << endl;
-
+	cout << ofToDataPath("1.png") << fs::exists(ofToDataPath("1.png")) << endl;
+	cout << ofToDataPath("1.jpg") << fs::exists(ofToDataPath("1.jpg")) << endl;
 	i.load("1.tif");
 	i2.load("1.png");
 	i3.load("1.jpg");

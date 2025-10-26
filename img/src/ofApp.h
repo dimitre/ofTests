@@ -2,14 +2,6 @@
 
 #include "ofMain.h"
 
-//#define MANGO_IMPLEMENT_MAIN
-// #include <mango/mango.hpp>
-// #include <mango/opengl/opengl.hpp>
-
-// using namespace mango;
-// using namespace mango::math;
-// using namespace mango::image;
-
 class ofApp : public ofBaseApp {
 public:
 	void setup() override;
@@ -17,9 +9,5 @@ public:
 	void draw() override;
 	void keyPressed(int key) override;
 
-	// ofImage img;
-//	ofImage i { ofToDataPath("1.tif") };
-//	ofImage i2 { ofToDataPath("1.png") };
 	ofImage i, i2, i3;
-
 };
