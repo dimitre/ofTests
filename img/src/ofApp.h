@@ -1,6 +1,7 @@
 #pragma once
 
 #include "ofMain.h"
+
 //#define MANGO_IMPLEMENT_MAIN
 // #include <mango/mango.hpp>
 // #include <mango/opengl/opengl.hpp>
@@ -8,7 +9,6 @@
 // using namespace mango;
 // using namespace mango::math;
 // using namespace mango::image;
-
 
 class ofApp : public ofBaseApp {
 public:
@@ -20,7 +20,6 @@ public:
 	// ofImage img;
 //	ofImage i { ofToDataPath("1.tif") };
 //	ofImage i2 { ofToDataPath("1.png") };
-	ofImage i { "1.tif" };
-	ofImage i2 { "1.png" };
+	ofImage i, i2, i3;
 
 };
