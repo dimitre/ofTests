@@ -1,0 +1,10 @@
+# name: Coca2023
+
+ofpath: ../../..
+
+addons:
+  # - ofxMicroUI
+  # - ofxTools
+  # - ofxScenes
+
+templates: [chalet, zed]

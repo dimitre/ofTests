@@ -1,0 +1,224 @@
+name: kbd
+version: 0.9.0
+variables:
+  generator: ofGen 0.9.8
+  platform: macos
+  ofPath: ../../..
+  addons: ProjectSourceFiles_kbd
+  time: 20260226-0153
+abstracts:*:
+  language: C++
+  language[toolchain:apple-llvm]: Objective-C++
+  settings:Cxx:
+    cppStandard: c++20
+    compileOptions:
+      - -D_FORTIFY_SOURCE=3
+    compileOptions[:!windows]:
+      - -fstack-protector-strong
+    compileOptions[:macos]:
+      - -fobjc-arc
+      - -mmacosx-version-min=11.0
+    compileOptions[toolchain:msvc]:
+      - /MT
+      - /Z7
+      - /MP1
+    compileOptions[:linux+architecture:x86_64]:
+      - -msse2
+      - -msse
+      - -mfpmath=sse
+    warningsPreset: extra
+    runtimeTypeInformation: true
+    threads: true
+    exceptions: true
+    defines:
+      - TARGET_GLFW_WINDOW
+    defines[:macos]:
+      - GL_SILENCE_DEPRECATION
+      - GLES_SILENCE_DEPRECATION
+    defines[:debug]:
+      - DEBUG
+    linkerOptions[:linux]:
+      - -pthread
+    linkerOptions[:linux+architecture:aarch64]:
+      - -L/usr/lib/aarch64-linux-gnu
+    linkerOptions[:macos]:
+      - -mmacosx-version-min=11.0
+    defines[toolchain:msvc]:
+      - _CRT_SECURE_NO_WARNINGS
+      - NDEBUG
+      - _ASSERT_NO_CRT
+      - UNICODE
+      - _UNICODE
+      - URI_STATIC_BUILD
+      - strdup=_strdup
+    linkerOptions[toolchain:msvc]:
+      - /NODEFAULTLIB:MSVCRT
+    staticRuntimeLibrary: true
+    includeDirs:
+      - ${var:ofPath}/libs/openFrameworks/*
+      - ${var:ofPath}/libs/{${var:platform}}/include
+      - ${var:ofPath}/libs/{${var:platform}}/include/freetype2
+    includeDirs[:linux]:
+      - /usr/include/gstreamer-1.0
+      - /usr/include/glib-2.0
+      - /usr/lib/glib-2.0/include
+    includeDirs[:linux+architecture:x86_64]:
+      - /usr/include/x86_64-linux-gnu
+      - /usr/lib/x86_64-linux-gnu/glib-2.0/include
+    includeDirs[:linux+architecture:aarch64]:
+      - /usr/include/aarch64-linux-gnu
+      - /usr/lib/aarch64-linux-gnu/glib-2.0/include
+    appleFrameworks:
+      - Accelerate
+      - ApplicationServices
+      - AVFoundation
+      - IOKit
+      - Cocoa
+      - CoreAudio
+      - CoreMedia
+      - OpenGL
+      - QuartzCore
+    links[:linux]:
+      - wayland-client
+      - wayland-cursor
+      - wayland-egl
+      - xkbcommon
+      - EGL
+      - fontconfig
+      - Xrandr
+      - Xxf86vm
+      - Xi
+      - Xcursor
+      - Xinerama
+      - glut
+      - dl
+      - gstapp-1.0
+      - gstvideo-1.0
+      - gstbase-1.0
+      - gstreamer-1.0
+      - openal
+      - sndfile
+      - pthread
+      - GL
+      - GLU
+      - udev
+    links[:windows]:
+      - winmm
+      - opengl32
+      - mfplat
+      - mfreadwrite
+      - mfuuid
+      - d3d11
+      - dxgi
+      - Ws2_32
+    staticLinks[:!windows]:
+      - ${var:ofPath}/libs/${var:platform}/lib/libglfw3.a
+      - ${var:ofPath}/libs/${var:platform}/lib/libfmt.a
+      - ${var:ofPath}/libs/${var:platform}/lib/libkissfft-float.a
+      - ${var:ofPath}/libs/${var:platform}/lib/libmango.a
+      - ${var:ofPath}/libs/${var:platform}/lib/libbz2_static.a
+      - ${var:ofPath}/libs/${var:platform}/lib/libdeflate.a
+      - ${var:ofPath}/libs/${var:platform}/lib/liblcms2.a
+      - ${var:ofPath}/libs/${var:platform}/lib/liblz4.a
+      - ${var:ofPath}/libs/${var:platform}/lib/libzstd.a
+      - ${var:ofPath}/libs/${var:platform}/lib/libglew.a
+      - ${var:ofPath}/libs/${var:platform}/lib/libglm.a
+      - ${var:ofPath}/libs/${var:platform}/lib/libtess2.a
+      - ${var:ofPath}/libs/${var:platform}/lib/liburiparser.a
+      - ${var:ofPath}/libs/${var:platform}/lib/libfreetype.a
+      - ${var:ofPath}/libs/${var:platform}/lib/libz.a
+      - ${var:ofPath}/libs/${var:platform}/lib/libpugixml.a
+      - ${var:ofPath}/libs/${var:platform}/lib/librtaudio.a
+    staticLinks[:windows]:
+      - ${var:ofPath}/libs/${var:platform}/lib/mango.lib
+      - ${var:ofPath}/libs/${var:platform}/lib/bz2_static.lib
+      - ${var:ofPath}/libs/${var:platform}/lib/deflatestatic.lib
+      - ${var:ofPath}/libs/${var:platform}/lib/lcms2.lib
+      - ${var:ofPath}/libs/${var:platform}/lib/lz4.lib
+      - ${var:ofPath}/libs/${var:platform}/lib/zstd_static.lib
+      - ${var:ofPath}/libs/${var:platform}/lib/fmt.lib
+      - ${var:ofPath}/libs/${var:platform}/lib/zlibstatic.lib
+      - ${var:ofPath}/libs/${var:platform}/lib/freetype.lib
+      - ${var:ofPath}/libs/${var:platform}/lib/glew.lib
+      - ${var:ofPath}/libs/${var:platform}/lib/glfw3.lib
+      - ${var:ofPath}/libs/${var:platform}/lib/glm.lib
+      - ${var:ofPath}/libs/${var:platform}/lib/pugixml.lib
+      - ${var:ofPath}/libs/${var:platform}/lib/rtaudio.lib
+      - ${var:ofPath}/libs/${var:platform}/lib/tess2.lib
+      - ${var:ofPath}/libs/${var:platform}/lib/uriparser.lib
+      - ${var:ofPath}/libs/${var:platform}/lib/videoInput.lib
+targets:
+  ofWorks:
+    kind: staticLibrary
+    files:
+      include:
+        - ${var:ofPath}/libs/openFrameworks/{3d,communication,events,gl,graphics,math,sound,types,utils,video}/*.cpp
+        - ${var:ofPath}/libs/openFrameworks/app/{ofBaseApp,ofMainLoop,ofAppRunner,ofAppGLFWWindow}.cpp
+      include[:macos]:
+        - ${var:ofPath}/libs/openFrameworks/**.{mm,m}
+      exclude:
+        - .cache
+        - .DS_Store
+        - .settings
+        - .vscode
+        - .zed
+        - compile_flags.txt
+      exclude[:macos]:
+        - ${var:ofPath}/libs/openFrameworks/video/{ofGstVideoGrabber,ofGstVideoPlayer,ofGstUtils,ofMediaFoundationPlayer,ofDirectShowGrabber,ofDirectShowPlayer}.cpp
+        - ${var:ofPath}/libs/openFrameworks/sound/ofMediaFoundationSoundPlayer.cpp
+      exclude[:linux]:
+        - ${var:ofPath}/libs/openFrameworks/video/{ofDirectShowPlayer,ofDirectShowGrabber,ofMediaFoundationPlayer}.cpp
+        - ${var:ofPath}/libs/openFrameworks/sound/ofMediaFoundationSoundPlayer.cpp
+      exclude[:windows]:
+        - ${var:ofPath}/libs/openFrameworks/video/{ofGstVideoGrabber,ofGstVideoPlayer,ofGstUtils}.cpp
+        - ${var:ofPath}/libs/openFrameworks/sound/ofFmodSoundPlayer.cpp
+        - ${var:ofPath}/libs/openFrameworks/sound/ofOpenALSoundPlayer.cpp
+        - ${var:ofPath}/libs/openFrameworks/sound/ofSoundFFT.cpp
+  kbd:
+    kind: executable
+    runWorkingDirectory: ${cwd}/bin
+    settings:Cxx:
+      staticLinks:
+        - ofWorks
+      includeDirs:
+        - ${var:ofPath}/libs/openFrameworks
+        - src
+    files:
+      include:
+        - src/main.cpp
+        - src/ofApp.cpp
+      exclude:
+        - .DS_Store
+        - .settings
+        - .vscode
+        - .clangd
+        - .zed
+        - compile_flags.txt
+distribution:
+  kbd:
+    kind: bundle
+    buildTargets: kbd
+    exclude:
+      - data/.gitkeep
+    macosBundle:
+      type: app
+      icon: ${var:ofPath}/scripts/ofWorks.png
+      iconMethod: sips
+      infoPropertyList:
+        CFBundleDevelopmentRegion: en-US
+        CFBundleDisplayName: ${name}
+        CFBundleExecutable: ${mainExecutable}
+        CFBundleIconFile: ${icon}
+        CFBundleIdentifier: cc.ofWorks.${name}
+        CFBundleInfoDictionaryVersion: 6.0
+        CFBundleName: ${bundleName}
+        CFBundlePackageType: APPL
+        CFBundleSignature: ????
+        CFBundleShortVersionString: ${version}
+        CFBundleVersion: ${version}
+        LSMinimumSystemVersion: 11.0.0
+        NSHighResolutionCapable: true
+        NSCameraUsageDescription: This app needs to access the camera
+        NSMicrophoneUsageDescription: This app needs to access the microphone
+        ITSAppUsesNonExemptEncryption: false
+        NSHumanReadableCopyright: Made using ofworks.cc (openFrameworks fork)

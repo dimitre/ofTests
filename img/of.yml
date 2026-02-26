@@ -9,6 +9,5 @@ addons:
   # - ofxScenes
 #- ofxSvg
 
-# templates: [macos, zed, make]
-templates: [chalet, macos, zed, make]
+templates: [chalet, macos, zed]
 # defines: [FORCE_RGFW, TARGET_RGFW_WINDOW]
