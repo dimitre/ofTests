@@ -1,0 +1,11 @@
+
+ofpath: ../../..
+
+addons:
+- ofxTween
+# - ofxUnitTests
+# - ofxTools
+# - ofxScenes
+#- ofxSvg
+
+platforms: ["ios"]
