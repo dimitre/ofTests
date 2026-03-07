@@ -1,6 +1,0 @@
-ofpath: ../../..
-
-addons:
-# - ofxKinectForWindows2
-
-platforms: ["android2024"] 

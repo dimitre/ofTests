@@ -1,0 +1,9 @@
+ofpath: ../../..
+
+addons:
+- ofxMicroUI
+- ofxTools
+- ofxNetwork
+- ofxScenes
+
+# platforms: ["vs", "linux64"]
